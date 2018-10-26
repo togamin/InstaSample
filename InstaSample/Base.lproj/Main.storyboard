@@ -24,5 +24,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Phote View Controller-->
+        <scene sceneID="3jh-Om-a2J">
+            <objects>
+                <viewController storyboardIdentifier="photoEdit" id="6XH-NH-Ejz" customClass="photeViewController" customModule="InstaSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JJN-rv-GDf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AsB-qA-U0p">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMg-It-GBG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KZH-0Y-vcu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AsB-qA-U0p" firstAttribute="bottom" secondItem="yER-dj-CBa" secondAttribute="bottom" id="2P8-uo-mpd"/>
+                            <constraint firstItem="AsB-qA-U0p" firstAttribute="top" secondItem="JJN-rv-GDf" secondAttribute="top" id="4e4-JD-Nzq"/>
+                            <constraint firstItem="AsB-qA-U0p" firstAttribute="trailing" secondItem="yER-dj-CBa" secondAttribute="trailing" id="GgU-m3-wg9"/>
+                            <constraint firstItem="AsB-qA-U0p" firstAttribute="leading" secondItem="yER-dj-CBa" secondAttribute="leading" id="ZmC-UX-0y2"/>
+                            <constraint firstItem="CMg-It-GBG" firstAttribute="bottom" secondItem="yER-dj-CBa" secondAttribute="bottom" id="cl5-1t-m8n"/>
+                            <constraint firstItem="CMg-It-GBG" firstAttribute="trailing" secondItem="yER-dj-CBa" secondAttribute="trailing" id="drB-qD-dQL"/>
+                            <constraint firstItem="CMg-It-GBG" firstAttribute="top" secondItem="JJN-rv-GDf" secondAttribute="top" id="i3O-E3-WtZ"/>
+                            <constraint firstItem="CMg-It-GBG" firstAttribute="leading" secondItem="yER-dj-CBa" secondAttribute="leading" id="vuT-5N-WNb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yER-dj-CBa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aEW-pU-QBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="88"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="backImage.jpg" width="400" height="267"/>
+    </resources>
 </document>

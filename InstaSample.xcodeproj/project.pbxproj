@@ -14,6 +14,7 @@
 		B72CFC152182208C00194F07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B72CFC142182208C00194F07 /* Assets.xcassets */; };
 		B72CFC182182208C00194F07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72CFC162182208C00194F07 /* LaunchScreen.storyboard */; };
 		B72CFC202182A65200194F07 /* backImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B72CFC1F2182A65200194F07 /* backImage.jpg */; };
+		B78039A82182FA76002AF9E9 /* photeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78039A72182FA76002AF9E9 /* photeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		B72CFC172182208C00194F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B72CFC192182208C00194F07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B72CFC1F2182A65200194F07 /* backImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backImage.jpg; sourceTree = "<group>"; };
+		B78039A72182FA76002AF9E9 /* photeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photeViewController.swift; sourceTree = "<group>"; };
 		FEAE1CACB17E16F4A1341C9F /* Pods-InstaSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaSample/Pods-InstaSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 				B72CFC0D2182208A00194F07 /* AppDelegate.swift */,
 				B72CFC0F2182208A00194F07 /* ViewController.swift */,
 				B72CFC112182208A00194F07 /* Main.storyboard */,
+				B78039A72182FA76002AF9E9 /* photeViewController.swift */,
 				B72CFC142182208C00194F07 /* Assets.xcassets */,
 				B72CFC162182208C00194F07 /* LaunchScreen.storyboard */,
 				B72CFC192182208C00194F07 /* Info.plist */,
@@ -210,6 +213,7 @@
 			files = (
 				B72CFC102182208A00194F07 /* ViewController.swift in Sources */,
 				B72CFC0E2182208A00194F07 /* AppDelegate.swift in Sources */,
+				B78039A82182FA76002AF9E9 /* photeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

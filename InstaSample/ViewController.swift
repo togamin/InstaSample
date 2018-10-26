@@ -12,6 +12,8 @@ import YPImagePicker
 class ViewController: UIViewController {
 
     
+    var willPostImage:UIImage!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,11 +43,29 @@ class ViewController: UIViewController {
                 switch item {
                 case .photo(let photo):
                     print("phote",photo.image)
+                    self.willPostImage = photo.image
                 case .video(let video):
                     print("video",video)
                 }
             }
-            picker.dismiss(animated: true, completion: nil)
+            
+            
+//-------------------------------------------------
+            
+            print("memo:次の画面に遷移します。")
+            //ストーリーボードを指定
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            // フォトライブラリーで画像が選択された時の処理
+            guard let confirmController = storyboard.instantiateViewController(withIdentifier: "photoEdit") as? photeViewController else {
+                return
+            }
+            picker.pushViewController(confirmController, animated: true)
+            
+            //picker.dismiss(animated: true, completion: nil)
+            
+//-------------------------------------------------
+            
+            
         }
         present(picker, animated: true, completion: nil)
     }
