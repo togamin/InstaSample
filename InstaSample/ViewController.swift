@@ -39,6 +39,10 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         let picker = YPImagePicker()
         picker.didFinishPicking { [unowned picker] items, cancelled in
+        
+            
+            
+            
             for item in items {
                 switch item {
                 case .photo(let photo):
@@ -50,22 +54,22 @@ class ViewController: UIViewController {
             }
             
             
-//-------------------------------------------------
-            
-            print("memo:次の画面に遷移します。")
-            //ストーリーボードを指定
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            // フォトライブラリーで画像が選択された時の処理
-            guard let confirmController = storyboard.instantiateViewController(withIdentifier: "photoEdit") as? photeViewController else {
-                return
+            if cancelled {
+                //「cansel」ボタンが押された時の処理
+                
+            }else{
+                //「Next」ボタンが押された時の処理
+                print("memo:次の画面に遷移します。")
+                //ストーリーボードを指定
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                // フォトライブラリーで画像が選択された時の処理
+                guard let photeViewController = storyboard.instantiateViewController(withIdentifier: "photoEdit") as? photeViewController else {
+                    return
+                }
+                photeViewController.getPhoto = self.willPostImage
+                picker.pushViewController(photeViewController, animated: true)
             }
-            picker.pushViewController(confirmController, animated: true)
-            
             //picker.dismiss(animated: true, completion: nil)
-            
-//-------------------------------------------------
-            
-            
         }
         present(picker, animated: true, completion: nil)
     }

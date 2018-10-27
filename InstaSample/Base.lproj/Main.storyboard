@@ -27,7 +27,7 @@
         <!--Phote View Controller-->
         <scene sceneID="3jh-Om-a2J">
             <objects>
-                <viewController storyboardIdentifier="photoEdit" id="6XH-NH-Ejz" customClass="photeViewController" customModule="InstaSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="photoEdit" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6XH-NH-Ejz" customClass="photeViewController" customModule="InstaSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JJN-rv-GDf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,6 +40,12 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KZH-0Y-vcu">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9I4-LP-iPK">
+                                            <rect key="frame" x="8" y="28" width="359" height="334"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
@@ -57,10 +63,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yER-dj-CBa"/>
                     </view>
+                    <connections>
+                        <outlet property="getPhotoView" destination="9I4-LP-iPK" id="api-pY-ooW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEW-pU-QBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="88"/>
+            <point key="canvasLocation" x="1333.5999999999999" y="111.99400299850076"/>
         </scene>
     </scenes>
     <resources>

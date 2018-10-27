@@ -9,27 +9,16 @@
 import UIKit
 
 class photeViewController: UIViewController {
-
+    //前の画面がら画像データを受け取るための、変数。
+    var getPhoto:UIImage!
+    @IBOutlet weak var getPhotoView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //imageViewに画像を入れる
+        getPhotoView.image = getPhoto
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
